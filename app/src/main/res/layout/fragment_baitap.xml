@@ -1,0 +1,143 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.brian.gfit.fragment.BaitapFragment"
+    android:background="@drawable/bg_baitap">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.SearchView
+            app:queryHint="Tìm kiếm bài tập"
+            app:searchIcon="@drawable/ic_search_white_24dp"
+            android:id="@+id/baitap_search_view"
+            android:background="@drawable/bg_rounded"
+            android:layout_margin="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+        </android.support.v7.widget.SearchView>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/co_nguc"/>
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHESTS - NGỰC"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+        </RelativeLayout>
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SHOULDER - VAI"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/co_vai"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/co_lung"/>
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BACK - LƯNG"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+        </RelativeLayout>
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ABS - BỤNG"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/co_bung"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/co_chan"/>
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LEGS - CHÂN"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>
