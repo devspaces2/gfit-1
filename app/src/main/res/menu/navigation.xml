@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bai_tap"
+        android:icon="@drawable/baitap"
+        android:title="@string/bai_tap"
+        app:showAsAction="always|withText"
+        android:enabled="true" />
+
+    <item
+        android:id="@+id/lich_tap"
+        android:icon="@drawable/lichtap"
+        android:title="@string/lich_tap"
+        app:showAsAction="always|withText"
+        android:enabled="true" />
+
+    <item
+        android:id="@+id/giao_an"
+        android:icon="@drawable/giaoan"
+        android:title="@string/giao_an"
+        app:showAsAction="always|withText"
+        android:enabled="true" />
+    <item
+        android:id="@+id/dinh_duong"
+        android:icon="@drawable/dinhduong"
+        android:title="@string/dinh_duowng"
+        app:showAsAction="always|withText"
+        android:enabled="true" />
+    <item
+        android:id="@+id/kien_thuc"
+        android:icon="@drawable/kienthuc"
+        android:title="@string/kien_thuc"
+        app:showAsAction="always|withText"
+        android:enabled="true" />
+
+</menu>

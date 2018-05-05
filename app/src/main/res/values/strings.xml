@@ -3,4 +3,13 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="bai_tap">Bài tập</string>
+    <string name="kien_thuc">Kiến thức</string>
+    <string name="dinh_duowng">Dinh dưỡng</string>
+    <string name="giao_an">Giáo án</string>
+    <string name="lich_tap">Lịch tập</string>
 </resources>

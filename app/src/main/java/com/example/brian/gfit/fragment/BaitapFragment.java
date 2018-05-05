@@ -18,11 +18,10 @@ import com.example.brian.gfit.R;
  */
 public class BaitapFragment extends Fragment {
 
-
-    private SearchView searchView;
-    public BaitapFragment() {
-        // Required empty public constructor
+    public static BaitapFragment createInstance(){
+        return new BaitapFragment();
     }
+    private SearchView searchView;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

@@ -15,9 +15,8 @@ import com.example.brian.gfit.R;
  */
 public class GiaoanFragment extends Fragment {
 
-
-    public GiaoanFragment() {
-        // Required empty public constructor
+    public static GiaoanFragment createInstance() {
+        return new GiaoanFragment();
     }
 
 
