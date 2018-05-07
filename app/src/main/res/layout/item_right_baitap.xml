@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <ImageView
-        android:id="@+id/right_image_view"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true" />
-
+    android:layout_height="wrap_content">
     <TextView
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        android:id="@+id/left_text_view"
+        android:id="@+id/my_textview_right"
+        android:layout_centerInParent="true"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_toStartOf="@+id/right_image_view"
-        android:text="demo hello" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+    <ImageView
+        android:id="@+id/my_imageview_right"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
 </RelativeLayout>

@@ -1,5 +1,7 @@
 package com.example.brian.gfit.util;
 
+import com.example.brian.gfit.R;
+import com.example.brian.gfit.model.BaiTap;
 import com.example.brian.gfit.model.DetailExercise;
 import com.example.brian.gfit.model.GiaoAn;
 import com.example.brian.gfit.model.TrainingSchedule;
@@ -36,5 +38,14 @@ public class Constance {
             temp.add(giaoAn);
         }
         return temp;
+    }
+    public static List<BaiTap> createListBaiTap(){
+        List<BaiTap> list = new ArrayList<>();
+        list.add(new BaiTap("CHESTS - NGỰC", R.drawable.co_nguc));
+        list.add(new BaiTap("SHOULDER - VAI", R.drawable.co_vai));
+        list.add(new BaiTap("BACK - LƯNG", R.drawable.co_lung));
+        list.add(new BaiTap("ABS - BỤNG", R.drawable.co_bung));
+        list.add(new BaiTap("LEGS - CHÂN", R.drawable.co_chan));
+        return list;
     }
 }
