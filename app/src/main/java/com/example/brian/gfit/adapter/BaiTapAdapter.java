@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.brian.gfit.OnClickBaiTapListener;
 import com.example.brian.gfit.R;
 import com.example.brian.gfit.model.BaiTap;
 
@@ -16,9 +17,11 @@ import java.util.List;
 public class BaiTapAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private Context context;
     private List<BaiTap> data;
-    public BaiTapAdapter(Context context, List<BaiTap> data) {
+    private OnClickBaiTapListener listener;
+    public BaiTapAdapter(Context context, List<BaiTap> data, OnClickBaiTapListener listener) {
         this.context = context;
         this.data = data;
+        this.listener = listener;
     }
 
     @Override
@@ -46,14 +49,26 @@ public class BaiTapAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     }
 
     @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
+    public void onBindViewHolder(RecyclerView.ViewHolder holder, final int position) {
         switch (holder.getItemViewType()){
             case 0:{
                 BaiTapHolderLeft left = (BaiTapHolderLeft) holder;
+                left.itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        listener.onClick(data.get(position));
+                    }
+                });
                 left.onBind(data.get(position));
             } break;
             case 1:{
                 BaiTapHolderRight right = (BaiTapHolderRight) holder;
+                right.itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        listener.onClick(data.get(position));
+                    }
+                });
                 right.onBind(data.get(position));
             }break;
         }
